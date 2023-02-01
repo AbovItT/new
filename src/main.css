@@ -1,0 +1,91 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+/* .scroll_menu{
+
+ }    */
+
+.header-link {
+  @apply font-bold font-sans border-transparent border-b-4  text-gray-700   h-full hover:text-linkColor transition-all duration-300 hover:border-b-2 hover:border-linkColor  box-border;
+}
+
+.slider__text__content {
+  @apply absolute border p-3 max-w-xl z-50 top-10 left-10;
+}
+
+.slider__text__content__title {
+  @apply xl:text-4xl lg:text-3xl text-linkColor;
+}
+
+.slider__text__content__desc {
+  @apply text-xl text-gray-700 mt-3;
+}
+
+.link-button {
+  @apply py-2 sm:py-3 w-[140px] sm:w-[220px] flex justify-center lg:px-12 md:px-8 sm:px-6  border border-black rounded-3xl bg-black text-white transition-all duration-300 ease-linear hover:bg-transparent hover:text-black;
+}
+
+.link-button-dark {
+  @apply py-2 sm:py-3 w-[140px] sm:w-[220px] flex justify-center lg:px-12 md:px-8 sm:px-6  border border-black rounded-3xl bg-black text-white transition-all duration-300 ease-linear hover:bg-slate-300 hover:text-black;
+}
+
+.tab__button {
+  @apply font-bold  sm:text-xl text-black hover:text-black transition-all duration-300 ease-linear aria-selected:text-linkColor aria-selected:scale-110 
+    aria-selected:border-b-2 border-linkColor;
+}
+
+.tab__li {
+  @apply w-20  sm:w-28 py-2 font-press-start   transition-all duration-500;
+}
+
+.Second__Blog {
+  @apply border md:flex py-5 bg-[rgba(35,32,42,1)] rounded-3xl mt-5;
+}
+
+.Portfolio__Section {
+  @apply bg-[rgba(35,32,42,1)] rounded-3xl mt-5 shadow-[0_0px_15px_rgb(0,0,0,1)];
+}
+
+@layer components {
+  .Second__Blog {
+    @apply relative;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  .technologies__card {
+    @apply w-[80%] sm:w-1/2 md:w-2/6 lg:w-1/5 bg-[rgba(35,32,42,1)] h-36 lg:h-48 rounded-[1.5rem] flex justify-center items-center transition-all duration-300;
+  }
+
+  .technologies__card h3 {
+    @apply text-slate-400 text-xl text-center transition-all duration-300;
+  }
+
+  .technologies__card:hover {
+    @apply bg-[rgba(30,27,36,1)];
+  }
+
+  .technologies__card:hover h3 {
+    @apply text-white;
+  }
+}
+
+.Second__Blog::after {
+  position: absolute;
+  content: "saass";
+  top: 0;
+  right: 0;
+  clip-path: polygon(39% 0, 100% 0%, 100% 100%, 0 100%);
+  background: rgba(30, 27, 36, 1);
+  /* z-index:9999999; */
+  width: 50%;
+  height: 100%;
+}
+
+   
